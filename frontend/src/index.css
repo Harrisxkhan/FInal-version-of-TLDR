@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: white;
+}
+
+.follow_box::-webkit-scrollbar {
+  width: 2px !important;
+  height: 2px !important;
+}
+
+.follow_box::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.follow_box::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.1);
+}
+
+.followers_scroll::-webkit-scrollbar {
+  width: 6px !important;
+  height: 4px !important;
+}
+
+.followers_scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.followers_scroll::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.1);
+}
+
+.comment_scroll::-webkit-scrollbar {
+  width: 6px !important;
+  height: 4px !important;
+}
+
+.comment_scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.comment_scroll::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.1);
+}
+
+.swiper-pagination {
+  visibility: hidden !important;
+}
+
+.comment_ploaceholder::placeholder {
+  @apply text-gray-700;
+}
+
+.swiper {
+  z-index: 0 !important;
+}
+.container {
+  width: min(1400px, 95%);
+  margin: 0 auto;
+}

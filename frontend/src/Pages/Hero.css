@@ -1,0 +1,32 @@
+.hero-img {
+  animation: float 9s linear infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  80% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+@media only screen and (max-width: 48em) {
+  .hero-img {
+    animation-play-state: paused;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,25 @@
+/* Common styles */
+.loader {
+  --size: 60px;
+  --primary-color: rgb(18, 18, 18);
+
+  height: var(--size);
+  width: var(--size);
+}
+
+/* ONE */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.one {
+  border: calc(var(--size) / 10) solid var(--primary-color);
+  border-left-color: transparent;
+  border-radius: 100%;
+  box-sizing: border-box;
+  animation: spin 0.7s linear infinite;
+}
